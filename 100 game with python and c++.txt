@@ -1,0 +1,89 @@
+100 Game with Python Program
+------------------------------
+
+sum=0
+while (sum<=100 ):
+    put=int(input("player 1 play "))
+    while (put>10) or (put<1) :
+        print ("THIS IS NOT LEGAL")
+        put=(int(input("play 1 more time")))
+    if sum==100 :
+         print ("congratulations for 1")
+         break
+    else :
+         sum =sum+put
+         print ("SUM=" ,sum)
+
+    put2=int(input("player 2 play ") )
+    while (put2>10) or (put2<1):
+        print ("THIS IS NOT LEGAL")
+        put2=(int(input("play 1 more time")))
+    if sum>=100 :
+         print ("congratulations for 2")
+         break
+    else :
+         sum =sum+put2
+         print ("SUM=" ,sum)
+
+
+-------------------------------------------------------------------------
+100 Game with c++ Program
+--------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+
+    int sum=0,put,put2 ;
+    while (sum<=100)
+    {
+        cout <<"play player one"<< "\n";
+        cin >>put ;
+        {
+            while (put>10 || put <1)
+            {
+                cout<<"THIS IS NOT LEGAL"<< "\n";
+                cout <<"play 1 more time " << "\n";
+                cin >> put ;
+            }
+            if (sum>=100)
+            {
+                cout<<"congratulations for player 1"<< "\n";
+                break;
+            }
+            else
+            {
+                sum+=put;
+                cout <<"SUM="<< sum <<"\n";
+            }
+
+        }
+
+        {
+            cout <<"player two play"<<"\n";
+            cin>>put2;
+            while (put2>10 || put2<1)
+            {
+                cout <<"THIS IS NOT LEGAL" <<"\n";
+                cout <<"play 1 more time "<<"\n";
+                cin>>put2 ;
+            }
+            if (sum>=100)
+            {
+                cout <<"congratulations for player 2"<<"\n";
+                break;
+            }
+            else
+            {
+                sum+=put2;
+                cout <<"SUM=" <<sum << "\n";
+            }
+
+        }
+
+    }
+}
